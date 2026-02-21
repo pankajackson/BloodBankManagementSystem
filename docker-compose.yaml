@@ -30,7 +30,6 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
     depends_on:
-      # - db
       db:
         condition: service_healthy
 volumes:
